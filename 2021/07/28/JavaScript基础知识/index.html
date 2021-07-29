@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://log-Mi.github.io.git">
-  <title>前端路线 | 李贵铭的博客</title>
+  <title>JavaScript基础知识 | 李贵铭的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前端学习路径 HTML 标签  CSS 盒模型、定位、文档流、优先级">
+  <meta name="description" content="[toc]  此部分基础知识整理自渡一老师姬成的JavaScript公开课，记录时间为2020年1-5月，现整理在此，如果对您有所帮助可以打赏:smile:。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="前端路线">
-<meta property="og:url" content="http://log-mi.github.io.git/2021/07/26/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/index.html">
+<meta property="og:title" content="JavaScript基础知识">
+<meta property="og:url" content="http://log-mi.github.io.git/2021/07/28/JavaScript%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/index.html">
 <meta property="og:site_name" content="李贵铭的博客">
-<meta property="og:description" content="前端学习路径 HTML 标签  CSS 盒模型、定位、文档流、优先级">
+<meta property="og:description" content="[toc]  此部分基础知识整理自渡一老师姬成的JavaScript公开课，记录时间为2020年1-5月，现整理在此，如果对您有所帮助可以打赏:smile:。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-07-25T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-07-26T08:07:36.483Z">
+<meta property="article:published_time" content="2021-07-28T07:23:29.704Z">
+<meta property="article:modified_time" content="2021-07-29T02:28:23.803Z">
 <meta property="article:author" content="log-Mi">
 <meta property="article:tag" content="南京林业大学 CS 前端">
 <meta name="twitter:card" content="summary">
@@ -151,52 +151,158 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-前端学习路径" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-JavaScript基础知识" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      前端路线
+      JavaScript基础知识
     </h1>
   
 
         
-        <a href="/2021/07/26/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/" class="archive-article-date">
-  	<time datetime="2021-07-25T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-26</time>
+        <a href="/2021/07/28/JavaScript%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="archive-article-date">
+  	<time datetime="2021-07-28T07:23:29.704Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-28</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="前端学习路径"><a href="#前端学习路径" class="headerlink" title="前端学习路径"></a>前端学习路径</h3><ul>
-<li><p>HTML 标签</p>
-</li>
-<li><p>CSS 盒模型、定位、文档流、优先级</p>
-</li>
-</ul>
+        <p>[toc]</p>
+<blockquote>
+<p>此部分基础知识整理自渡一老师姬成的JavaScript公开课，记录时间为2020年1-5月，现整理在此，如果对您有所帮助可以打赏:smile:。</p>
+</blockquote>
 <span id="more"></span>
 
+<h2 id="一、JavaScript概览"><a href="#一、JavaScript概览" class="headerlink" title="一、JavaScript概览"></a>一、JavaScript概览</h2><ul>
+<li><p>浏览器组成</p>
 <ul>
-<li><p>JavaScript     DOM基本操作(变量、函数、事件、this、传参、for、if else、获得dom方法)–写出一些基本页面交互（弹出菜单、轮播图、折叠、DOM节点crud）</p>
+<li><p>1.shell</p>
 </li>
-<li><p>Node.js 前端工程化      express设静态目录、创建服务、响应get请求（基本要求：安装npm包，创建服务、响应请求）</p>
-</li>
-<li><p>Ajax 判断readyState和status，open/send（返回json/js在后端获得数据创建dom）</p>
-</li>
-<li><p>HTTP+TCP/IP（计算机网络相关）</p>
-</li>
-<li><p>原生Js值/引用传递</p>
-</li>
-<li><p>Vue.js 数据驱动视图、模块化、组件化、单向数据流、双向绑定（先在vue脚手架自带的hello     world页面上实现前述基本DOM操作，然后npm安装axios请求之前的get接口返回json渲染生成页面）熟悉vue命令</p>
-</li>
-<li><p>Vue 项目，跟着写，积累代码量</p>
-</li>
-<li><p>深入原生Js、ES6、new、闭包、原型、继承、call/aplly、原型链、作用域链等</p>
+<li><p>2.内核 </p>
+<ul>
+<li> (1) 渲染引擎</li>
+<li>(2) js引擎</li>
+<li>(3)其他引擎</li>
+</ul>
 </li>
 </ul>
+</li>
+<li><p>javascript历史</p>
+<ul>
+<li><p>Livescript—-&gt;JavaScript</p>
+</li>
+<li><p>2001 IE6 优化分离</p>
+<p>2008 Google chrome发布，V8引擎js直接转为机器码</p>
+<p>后续Firefox也发布引擎TraceMonkey和JeagerMonkey</p>
+</li>
+</ul>
+</li>
+<li><p>JavaScript特点</p>
+<ul>
+<li>解释型语言(跨平台通用)</li>
+<li>.单线程(轮转时间片，抢时间)，异步(与生活中同步含义相同)</li>
+<li>ECMA标注</li>
+</ul>
+</li>
+<li><p>JavaScript三大部分</p>
+<ul>
+<li>ECMAScript + DOM + BOM</li>
+</ul>
+</li>
+<li><p>引入JavaScript(<strong>不可同时用</strong>)</p>
+<ul>
+<li>```javascript<br>外部js文件: <script type="text/javascript" src="文件名.js"></script><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- &#96;&#96;&#96;javascript</span><br><span class="line">  页面级js: &lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;&lt;script&gt;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>JavaScript结构</p>
+<ul>
+<li>var 变量名;—–&gt;变量声明   (var a,b,c,d;)                变量名=值;—–&gt;变量赋值</li>
+<li>数据类型     ———&gt;赋值形式不同<ul>
+<li>原始值(栈stack)      Number Boolean String undefined null—–&gt;不可改变的值</li>
+<li>引用值(堆heap)      array Ovjective function..RegExp date (类似指针)![](/raw and cite.png)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h2 id="二、基础语法知识（仅部分要点）"><a href="#二、基础语法知识（仅部分要点）" class="headerlink" title="二、基础语法知识（仅部分要点）"></a>二、基础语法知识（仅部分要点）</h2><ol>
+<li><p>分号结尾</p>
+</li>
+<li><p>代码错误导致后续代码终止，但不影响其他js代码块</p>
+</li>
+<li><p>格式规范</p>
+</li>
+<li><p>字符串与其他数据类型相加得字符串(自左向右)，效果:连接</p>
+</li>
+<li><p>赋值顺序自右向左，计算顺序自左向右</p>
+</li>
+<li><p>==NaN不等于NaN==</p>
+</li>
+<li><p>==undefined null NaN “” 0 false   ==&gt; false==</p>
+</li>
+<li><p>逻辑运算符</p>
+<pre><code>    Var a = 1 &amp;&amp; 2
+    规则：先看第一个表达式转换成的结果，若结果为真，则看第二个表达式
+</code></pre>
+<p>转换成布尔值的结果。第一次遇到代表false的表达式，则不看后面<br>的表达式。(短路表达式 data &amp;&amp; 执行用到data的语句) ( || 相反)</p>
+</li>
+<li><p>输入值</p>
+<pre><code> var n =parseInt(window.prompt(&#39;input&#39;));
+</code></pre>
+</li>
+<li><p>引入Math<br>Math.sqrt()…</p>
+</li>
+<li><p>打印<br>Console.log();</p>
+</li>
+<li><p>数组<br>arr.length  ———数组长度</p>
+</li>
+<li><p>对象,引用值</p>
+</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">	lastName : <span class="string">&quot;deng&quot;</span>,</span><br><span class="line">	age : <span class="number">40</span>,</span><br><span class="line">	smoke : <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;,</span><br><span class="line">&#125;                     ------------&gt;可对应各种数据类型</span><br><span class="line">obj.lastName;         ------------&gt;取用</span><br></pre></td></tr></table></figure>
+
+<p>​    对应的类型为函数则称其方法<br>​    ==引用值比较的是地址{}{} ——&gt; false==</p>
+<ol start="14">
+<li><p>typeof操作符:返回数据的类型</p>
+<pre><code>    number,string,boolean,object,undefined,function
+    &lt;u&gt;null属于object&lt;/u&gt;
+    格式：typeof(num)  &lt;u&gt;or&lt;/u&gt;  typeof num
+</code></pre>
+</li>
+<li><p>类型转换<br>(1)显式类型转换</p>
+<pre><code>        Number(&#39;123&#39;);                (undefined 和 非数（如字母不能转换为数字），返回NaN)
+        parseInt(123.3,16);         (转换为整型,后一参数为转换进制 范围2-36)-----&gt;小数点截断
+        parseFloat(123.3,16);     (转换为浮点)
+        String(&#39;123&#39;);                    (转换为字符串)
+        Boolean(2);                      (转换为布尔值)
+        toString()                          (转换为字串， 用法num = demo.toString() undefined,null不可用)
+                                                  (括号内填数字则转换进制)
+</code></pre>
+<p>(2)隐式类型转换</p>
+<pre><code>        isNaN(&#39;abc&#39;)                     (调用Number()判断,在与NaN比对 undefined--true null--false)
+        ++/--/+/-/*                        (先调用Number，再运算，即便无法运算，类型也会转换)
+</code></pre>
+</li>
+</ol>
+<p>​                                                      (两侧任一为string，则调用string)<br>​            &amp;&amp; ||  !                            (若不同类型比较，则转换为Number比较,返回boolean)</p>
+<p>​            undefined == null != false   NaN!=NaN<br>​            undefined 和 null 不能和数字比较<br>​            ===   ==类型，值都相等==<br>​            typeof(typeof())    返回string类型”undefined”<br>​            If(字串 &amp;&amp; 字串){}—-可通过</p>
+<ol start="16">
+<li><p>num.toFixed(3) ——- 有效数字</p>
+</li>
+<li><p>函数</p>
+</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span>.test(参数)&#123;     -----------&gt;定义函数及其名称</span><br><span class="line">	语句块;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> test = <span class="function"><span class="keyword">function</span> <span class="title">abc</span>(<span class="params">参数</span>)</span>&#123;     -----------&gt;表达式忽略名字abc,abc可不写,区别:函数名不同</span><br><span class="line">命名函数表达式</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> test = <span class="function"><span class="keyword">function</span> (<span class="params">参数</span>)</span>&#123;      </span><br><span class="line">	匿名函数表达式</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>参数相当于在函数体内初始了一个变量，且天生不定参数数量，<br>函数中有一个实参列表arguments—[实参],类型为==伪数组==，其与形参成==映射关系(同时改变)==，但若传入实参缺失，则不形成映射</p>
+<ol start="18">
+<li>str.charAt(0)   ———&gt;     取用字符串指定位,或用数组取用方法</li>
+<li>函数放在if判断条件中则函数消失，返回true</li>
+</ol>
 
       
 
@@ -276,7 +382,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://log-mi.github.io.git/2021/07/26/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://log-mi.github.io.git/2021/07/28/JavaScript%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -290,18 +396,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/07/28/JavaScript%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          JavaScript基础知识
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/07/25/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">我的世界</div>
+    <a href="/2021/07/26/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">前端路线</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -328,7 +425,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84"><span class="toc-number">1.</span> <span class="toc-text">前端学习路径</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81JavaScript%E6%A6%82%E8%A7%88"><span class="toc-number">1.</span> <span class="toc-text">一、JavaScript概览</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.1.</span> <span class="toc-text"></span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E7%9F%A5%E8%AF%86%EF%BC%88%E4%BB%85%E9%83%A8%E5%88%86%E8%A6%81%E7%82%B9%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">二、基础语法知识（仅部分要点）</span></a></li></ol>
                     </div>
                 </span>
             </div>
